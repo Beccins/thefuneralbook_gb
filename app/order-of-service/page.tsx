@@ -241,6 +241,21 @@ function InteractiveServiceItem({ item }: { item: ServiceItem }) {
               />
             </div>
           )}
+          {item.id === "memorial-video" && (
+            <div className="mt-3">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/https://youtu.be/zmPNVK6RZ4s"
+                title="Gary's Memorial Video"
+                frameBorder="0"
+                allowFullScreen={true}
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+                style={{ borderRadius: "12px" }}
+              />
+            </div>
+          )}
         </div>
         <span className="text-muted-foreground text-sm ml-4">{item.time}</span>
       </div>
