@@ -693,7 +693,7 @@ export default function AddMemoriesPage() {
         <div className="container mx-auto px-4 py-8 text-center">
           <div className="flex items-center justify-center">
             <div className="flex items-center gap-4">
-              <p className="text-muted-foreground">{"With love and remembrance • The Funeral Book"}</p>
+              <p className="text-muted-foreground">{"Remembrance Reimagined • The Funeral Book"}</p>
               <Image
                 src="/funeral-book-logo.webp"
                 alt="The Funeral Book"
@@ -706,7 +706,7 @@ export default function AddMemoriesPage() {
           <p className="text-xs text-muted-foreground/70 mt-2">
             Created by{" "}
             <a href="https://github.com/afishydeath" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground transition-colors">
-              Sam Hogan
+              Munns Media Pty Ltd
             </a>
           </p>
         </div>
