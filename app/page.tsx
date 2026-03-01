@@ -260,7 +260,7 @@ export default function MemorialHomepage() {
           <p className="text-xs text-muted-foreground/70 mt-2">
             Created by{" "}
             <a
-              href="https://github.com/beccins"
+              href="https://thefuneralbook.com"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-muted-foreground transition-colors"
