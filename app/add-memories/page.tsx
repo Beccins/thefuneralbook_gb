@@ -213,6 +213,8 @@ export default function AddMemoriesPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Photo Carousel */}
+          <PhotoCarousel />
       {/* Header */}
       <header className="border-b border-border bg-background">
         <div className="container mx-auto px-4 py-6">
