@@ -161,7 +161,7 @@ export default function AfterServicePage() {
           
           <div className="flex items-center justify-center">
             <div className="flex items-center gap-4">
-              <p className="text-muted-foreground">{"With love and remembrance • The Funeral Book"}</p>
+              <p className="text-muted-foreground">{"Remembrance Reimagined • The Funeral Book"}</p>
               <Image
                 src="/bessie_logo_final.png"
                 alt="The Funeral Book"
