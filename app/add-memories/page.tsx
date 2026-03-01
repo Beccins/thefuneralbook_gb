@@ -694,13 +694,13 @@ export default function AddMemoriesPage() {
           <div className="flex items-center justify-center">
             <div className="flex items-center gap-4">
               <p className="text-muted-foreground">{"Remembrance Reimagined • The Funeral Book"}</p>
-              <Image
-                src="/funeral-book-logo.webp"
-                alt="The Funeral Book"
-                width={60}
-                height={30}
-                className="object-contain"
-              />
+            <Image
+  src="/funeral-book-logo.webp"
+  alt="The Funeral Book"
+  width={60}
+  height={30}
+  className="object-contain mix-blend-multiply"
+/>
             </div>
           </div>
           <p className="text-xs text-muted-foreground/70 mt-2">
