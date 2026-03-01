@@ -50,7 +50,78 @@ interface Memory {
   timeframe: string
   musicPlaylist?: { title: string; spotifyId: string }[]
 }
+const photos = [
+  { src: "/01_Gary_Young7ish.jpg", caption: "Young Gary" },
+  { src: "/02_Gary_11ish_with_family.jpg", caption: "Gary with Family" },
+  { src: "/03_Gary_21st_cake.jpg", caption: "Gary's 21st Birthday" },
+  { src: "/04_Gary_Gail_WeddingCar.jpg", caption: "Gary & Gail's Wedding" },
+  { src: "/05_Gary_Family_50ish.jpg", caption: "Gary with Family" },
+  { src: "/06_Gary_TableTennis.jpg", caption: "Gary Playing Table Tennis" },
+  { src: "/07_Gary_Seaplane.jpg", caption: "Gary & the Seaplane" },
+  { src: "/08_Gary_in_Cadets.jpg", caption: "Gary in Cadets" },
+  { src: "/GARY_2010.jpg", caption: "Gary, 2010" },
+]
 
+function PhotoCarousel() {
+  const [current, setCurrent] = useState(0)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % photos.length)
+    }, 4000)
+    return () => clearInterval(timer)
+  }, [])
+
+  const prev = () => setCurrent((prev) => (prev - 1 + photos.length) % photos.length)
+  const next = () => setCurrent((prev) => (prev + 1) % photos.length)
+
+  return (
+    <Card className="bg-card border-border overflow-hidden">
+      <CardContent className="p-0">
+        <div className="relative h-96 w-full">
+          <Image
+            src={photos[current].src}
+            alt={photos[current].caption}
+            fill
+            className="object-cover transition-opacity duration-700"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+          <div className="absolute bottom-4 left-0 right-0 text-center">
+            <p className="text-white text-lg font-semibold drop-shadow">{photos[current].caption}</p>
+            <p className="text-white/70 text-sm mt-1">In loving memory of Gary Robert Beaumont</p>
+          </div>
+          <Button
+            variant="secondary"
+            size="sm"
+            className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white border-0"
+            onClick={prev}
+          >
+            <ChevronLeft className="w-4 h-4" />
+          </Button>
+          <Button
+            variant="secondary"
+            size="sm"
+            className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white border-0"
+            onClick={next}
+          >
+            <ChevronRight className="w-4 h-4" />
+          </Button>
+          <div className="absolute bottom-14 left-0 right-0 flex justify-center gap-2">
+            {photos.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrent(index)}
+                className={`w-2 h-2 rounded-full transition-all ${
+                  index === current ? "bg-white scale-125" : "bg-white/50"
+                }`}
+              />
+            ))}
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+  )
+}
 export default function AddMemoriesPage() {
   const [memoryForm, setMemoryForm] = useState({
     name: "",
