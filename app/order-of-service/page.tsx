@@ -390,12 +390,12 @@ export default function OrderOfServicePage() {
           <p className="text-xs text-muted-foreground/70 mt-2">
             Created by{" "}
             <a
-              href="https://github.com/afishydeath"
+              href="https://thefuneralbook.com"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-muted-foreground transition-colors"
             >
-              Sam Hogan
+              Munns Media Pty Ltd
             </a>
           </p>
         </div>
