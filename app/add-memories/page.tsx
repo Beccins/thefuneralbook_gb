@@ -59,7 +59,7 @@ const photos = [
   { src: "/06_Gary_TableTennis.jpg", caption: "Gary Playing Table Tennis" },
   { src: "/07_Gary_Seaplane.jpg", caption: "Gary & the Seaplane" },
   { src: "/08_Gary_in_Cadets.jpg", caption: "Gary in Cadets" },
-  { src: "/GARY_2010.jpg", caption: "Gary, 2010" },
+  { src: "/GARY 2010.jpg", caption: "Gary, 2010" },
 ]
 
 function PhotoCarousel() {
