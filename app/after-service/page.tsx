@@ -109,7 +109,7 @@ export default function AfterServicePage() {
                 <div>
                   <h4 className="font-semibold text-foreground mb-2">Dress Code</h4>
                   <p className="text-muted-foreground text-pretty">
-                    Business casual or semi-formal attire is appropriate. Margaret loved bright colors, so please don't
+                    Business casual or semi-formal attire is appropriate. Happy bright colors are encouraged, so please don't
                     feel limited to traditional black.
                   </p>
                 </div>
