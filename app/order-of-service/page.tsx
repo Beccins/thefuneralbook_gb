@@ -341,14 +341,34 @@ export default function OrderOfServicePage() {
             </CardContent>
           </Card>
 
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card className="bg-card border-border">
               <CardHeader>
-                <CardTitle className="text-lg text-foreground">Officiant</CardTitle /* TODO check correct */>
+                <CardTitle className="text-lg text-foreground">Officiant</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-2">
                   <p className="font-semibold text-foreground">Pastor Glenn Stanley</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border">
+              <CardHeader>
+                <CardTitle className="text-lg text-foreground">Watch the Service</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="aspect-video">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/HVVEK395Io4"
+                    title="Funeral Service for Gary Robert Beaumont"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="rounded-lg"
+                  />
                 </div>
               </CardContent>
             </Card>
