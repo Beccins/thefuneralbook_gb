@@ -47,7 +47,7 @@ export default function MemorialHomepage() {
                 <h2 className="text-4xl font-bold text-foreground text-balance">Gary Robert Beaumont</h2>
 
                 <div className="text-xl text-muted-foreground space-y-2">
-                  <p>14th January, 1947 - 18th March, 2024</p>
+                  <p className="tracking-wide">14th January, 1947 — 18th March, 2024</p>
                  <p className="text-lg font-normal text-muted-foreground italic">He loved the Lord, his family, his church, his community, his country and pavlova</p>
                 </div>
 
