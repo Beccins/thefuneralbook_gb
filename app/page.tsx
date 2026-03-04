@@ -48,7 +48,7 @@ export default function MemorialHomepage() {
 
                 <div className="text-xl text-muted-foreground space-y-2">
                   <p>14th January, 1947 - 18th March, 2024</p>
-                  <p className="text-2xl font-semibold text-foreground italic">He loved the Lord, his family, his church, his community, his country and pavlova</p>
+                 <p className="text-lg font-normal text-muted-foreground italic">He loved the Lord, his family, his church, his community, his country and pavlova</p>
                 </div>
 
               </div>
